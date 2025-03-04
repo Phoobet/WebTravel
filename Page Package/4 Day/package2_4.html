@@ -11,203 +11,151 @@
 </head>
 <body>
   <style>
-    body {
-      background: url(/Photo/bg\ อ่าวคุ้งกระเบน.png) no-repeat center center fixed;
+    body{
+      background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), 
+      url(/Photo/จ.ฉะเชิงเทรา\ ตลาดบ้านใหม่\ 100\ ปี.jpeg) no-repeat center center fixed;
       background-size: cover;
-      font-family: 'K2D', sans-serif;
-      color: #fff;
-      margin: 0;
-      padding: 0;
-    }
-
-    header {
-      background-color: rgba(0, 0, 0, 0.7);
-      padding: 15px;
-    }
-
-    .navbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-family: 'Pacifico', sans-serif;
-    }
-
-    .navbar a {
-      color: white;
-      text-decoration: none;
-      padding: 10px 20px;
-      font-size: 18px;
-      transition: background-color 0.3s ease;
-    }
-
-    .navbar a:hover,
-    .navbar a.active {
-      background-color: rgba(255, 255, 255, 0.3);
-      border-radius: 5px;
-    }
-
-    .logo img {
-      height: 50px;
-    }
-
-    main {
-      display: flex;
-      justify-content: center;
-      margin-top: 30px;
-      padding: 0 20px;
-    }
-
-    .grid-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-      max-width: 1200px;
-      width: 100%;
-    }
-
-    .image-container img {
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
-    }
-
-    .right-container {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .container-info-box,
-    .container-activity-box {
-      background-color: rgba(0, 0, 0, 0.7);
-      margin-bottom: 20px;
-      padding: 20px;
-      border-radius: 10px;
-    }
-
-    .container-info-box h3,
-    .container-activity-box h3 {
-      font-size: 30px;
-      font-family: 'Pacifico', sans-serif;
-      margin-bottom: 15px;
-    }
-
-    ul {
-      list-style: none;
-      padding-left: 20px;
-    }
-
-    ul li {
-      font-size: 20px;
-      line-height: 1.6;
-    }
-
-    @media screen and (max-width: 768px) {
-      .grid-container {
-        grid-template-columns: 1fr;
-      }
-      .navbar a {
-        font-size: 16px;
-        padding: 8px 15px;
-      }
     }
   </style>
-
   <header>
     <nav>
       <div class="navbar">
-        <a href="#">HOME</a>
-        <a href="/Page Day/One.html">One Day</a>
-        <a href="/Page Day/Two.html">Two Day</a>
-        <a href="/Page Day/Three.html">Three Day</a>
-        <a href="/Page Day/Four.html">Four Day</a>
-        <a href="/Page Day/Five.html">Five Day</a>
-        <div class="logo">
-          <img src="/Photo/logo.png" alt="Logo">
+        <a href="/HomePage/index.html" class="pacifico-regular">HOME</a>
+        <div class="dropdown">
+            <button class="dropbtn pacifico-regular">DAY</button>
+            <div class="dropdown-content">
+                <a href="/Page Day/One.html" class="pacifico-regular">One Day</a>
+                <a href="/Page Day/Two.html" class="pacifico-regular">Two Day</a>
+                <a href="/Page Day/Three.html" class="pacifico-regular">Three Day</a>
+                <a href="/Page Day/Four.html" class="pacifico-regular">Four Day</a>
+                <a href="/Page Day/Five.html" class="pacifico-regular">Five Day</a>
+            </div>
         </div>
-      </div>
+        <div class="logo">
+            <img src="/Photo/logo.png" alt="Logo">
+        </div>
+    </div>
     </nav>
   </header>
-
   <main>
     <div class="grid-container">
       <!-- รูปภาพทางซ้าย -->
       <div class="image-container">
-        <img src="/Photo/จ.ระยอง เกาะเสม็ด.jpeg" alt="เกาะเสม็ด">
+        <img src="/Photo/จ.ระยอง เกาะเสม็ด.jpeg" alt="ภาพเกาะเสม็ด">
       </div>
-
       <!-- กล่อง Container ทางขวา -->
       <div class="right-container">
-        <!-- แพ็คเกจที่ 2 -->
         <div class="container-info-box">
-          <h3>แพ็คเกจที่ 2 : ตะลุยเกาะและทะเลตะวันออก</h3>
-          <!-- สถานที่ -->
+          <h3 class="k2d-regular" style="font-size: 25px;">แพ็คเกจที่ 2 : ตะลุยเกาะและทะเลตะวันออก</h3>
           <ul>
-            <li><strong>สถานที่:</strong> จังหวัดระยอง,จังหวัดจันทบุรี</li>
-            <li><strong>หมายเหตุ:</strong> แพ็คเกจเหล่านี้เป็นเพียงตัวอย่าง สามารถปรับเปลี่ยนสถานที่ท่องเที่ยว เวลา และกิจกรรมต่างๆ ได้ตามความต้องการ ควรตรวจสอบข้อมูลการเดินทางและการเปิดให้บริการสถานที่ท่องเที่ยวต่างๆ ก่อนการเดินทาง ราคาที่พักและค่าใช้จ่ายอื่นๆ ขึ้นอยู่กับฤดูกาลและชนิดของที่พักที่เลือก</li>
+            <li class="k2d-regular" style="font-size: 23px;">สถานที่ : จังหวัดระยอง จังหวัดจันทบุรี</li>
+            <li class="k2d-regular" style="font-size: 14px; color: crimson;">*หมายเหตุ : เวลาที่ระบุเป็นเวลาโดยประมาณ และอาจมีการเปลี่ยนแปลงได้ตามสถานการณ์จริง ควรตรวจสอบเวลาเปิด-ปิดสถานที่ท่องเที่ยวล่วงหน้า และเตรียมตัวให้พร้อมสำหรับการเดินทาง ราคาทัวร์และค่าใช้จ่ายอื่นๆ ขึ้นอยู่กับฤดูกาลและบริการที่เลือกใช้*</li>
           </ul>
         </div>
-
-        <!-- กิจกรรม วันแรก -->
         <div class="container-activity-box">
-          <h3>กิจกรรม วันแรก:</h3>
-          <ul>
-            <li> 06:00 น. เดินทาง ไปยังท่าเรือบ้านเพ จังหวัดระยอง </li>
-            <li>09:00 น. ขึ้นเรือเฟอร์รี่ไป เกาะเสม็ด</li>
-            <li>10:00 น. ถึงเกาะเสม็ด เช็คอินที่พัก</li>
-            <li> 11:00 น. ทำกิจกรรม: ดำน้ำดูปะการัง ว่ายน้ำ หรือพักผ่อนบนชายหาด</li>
-            <li>15:00 น. เดินเล่นชมวิวบริเวณอ่าวพร้าว หรือทำกิจกรรมชายหาดเพิ่มเติม</li>
-            <li>18:00 น. รับประทานอาหารเย็น พร้อมชมพระอาทิตย์ตกดิน</li>
-            <li>20:00 น. พักผ่อนตามอัธยาศัยที่พักบนเกาะเสม็ด</li>
-          </ul>
-        </div>
+          <div class="activity-container">
+            <div class="day-content k2d-regular" id="day1">
+                <h3>วันที่ 1 : ระยอง(เกาะและทะเล)</h3>
+                <ul>
+                    <li style="text-indent: 30px;">• 06:00 น. เดินทาง ไปยังท่าเรือบ้านเพ จังหวัดระยอง</li>
+                    <li style="text-indent: 30px;">• 09:00 น. ขึ้นเรือเฟอร์รี่ไป เกาะเสม็ด</li>
+                    <li style="text-indent: 30px;">• 10:00 น. ถึงเกาะเสม็ด เช็คอินที่พัก</li>
+                    <li style="text-indent: 30px;">• 11:00 น. ทำกิจกรรม: ดำน้ำดูปะการัง ว่ายน้ำ หรือพักผ่อนบนชายหาด</li>
+                    <li style="text-indent: 30px;">• 13:00 น. รับประทานอาหารกลางวัน อาหารทะเลสดๆ</li>
+                    <li style="text-indent: 30px;">• 15:00 น. เดินเล่นชมวิวบริเวณอ่าวพร้าว หรือทำกิจกรรมชายหาดเพิ่มเติม</li>
+                    <li style="text-indent: 30px;">• 18:00 น. รับประทานอาหารเย็น พร้อมชมพระอาทิตย์ตกดิน</li>
+                    <li style="text-indent: 30px;">• 20:00 น. พักผ่อนตามอัธยาศัยที่พักบนเกาะเสม็ด
+                    </li>
 
-        <!-- กิจกรรม วันที่สอง -->
-        <div class="container-activity-box">
-          <h3>กิจกรรม วันที่สอง:</h3>
-          <ul>
-            <li>08:00 น.: ออกเดินทางจากสระแก้วไปยังฉะเชิงเทรา</li>
-            <li>10:00 น.: เยี่ยมชมวัดสมานรัตนาราม</li>
-            <li>13:00 น.: รับประทานอาหารกลางวัน</li>
-            <li>14:30 น.: เดินทางไปยังที่พักในฉะเชิงเทรา</li>
-            <li>16:00 น.: อิสระพักผ่อน</li>
-            <li>18:00 น.: รับประทานอาหารเย็น</li>
-          </ul>
-        </div>
+                </ul>
+            </div>
 
-        <!-- กิจกรรม วันที่สาม -->
-        <div class="container-activity-box">
-          <h3>กิจกรรม วันที่สาม:</h3>
-          <ul>
-            <li>07:30 น. รับประทานอาหารเช้า</li>
-            <li>08:30 น. เดินทางจากระยองไปจันทบุรี </li>
-            <li>10:00 น. เยี่ยมชม พระนครคีรี (เขาคิชฌกูฏ) เดินชมวิวธรรมชาติ (กรุณาตรวจสอบช่วงเปิดให้เข้าชม)</li>
-            <li>12:00 น. รับประทานอาหารกลางวัน อาหารพื้นเมืองในจันทบุรี</li>
-            <li>16:00 น. เช็คอินที่พักในจันทบุรี</li>
-            <li>18:00 น. รับประทานอาหารเย็น</li>
-          </ul>
-        </div>
+            <div class="day-content k2d-regular" id="day2">
+                <h3>วันที่ 2 : ระยอง(ธรรมชาติและแหล่งท่องเที่ยว)</h3>
+                <ul>
+                    <li style="text-indent: 30px;">• 07:30 น. รับประทานอาหารเช้า</li>
+                    <li style="text-indent: 30px;">• 09:00 น. เดินทางกลับจากเกาะเสม็ดไปยังท่าเรือบ้านเพ    </li>
+                    <li style="text-indent: 30px;">• 10:00 น. เยี่ยมชม สวนผลไม้ (เปิดเฉพาะฤดูกาล) ทำกิจกรรมชิมผลไม้สด</li>
+                    <li style="text-indent: 30px;">• 12:00 น. รับประทานอาหารกลางวัน   </li>
+                    <li style="text-indent: 30px;">• 13:30 น. เดินทางไป น้ำตกเขาชะเมา เดินป่าศึกษาธรรมชาติและพักผ่อน</li>
+                    <li style="text-indent: 30px;">• 16:00 น. เช็คอินที่พักในตัวเมืองระยอง</li>
+                    <li style="text-indent: 30px;">• 18:00 น. รับประทานอาหารเย็น</li>
 
-        <!-- กิจกรรม วันที่สี่ -->
-        <div class="container-activity-box">
-          <h3>กิจกรรม วันที่สี่:</h3>
-          <ul>
-            <li>08:00 น. รับประทานอาหารเช้า</li>
-            <li>09:00 น. เดินทางกลับ พร้อมแวะซื้อของฝาก</li>
-          </ul>
+                </ul>
+
+            </div>
+            <div class="day-content k2d-regular" id="day3">
+              <h3>วันที่ 3 : จันทบุรี(เมืองประวัติศาสตร์)</h3>
+              <ul>
+                  <li style="text-indent: 30px;">• 07:30 น. รับประทานอาหารเช้า</li>
+                  <li style="text-indent: 30px;">• 08:30 น. เดินทางจากระยองไปจันทบุรี</li>
+                  <li style="text-indent: 30px;">• 10:00 น. เยี่ยมชม พระนครคีรี (เขาคิชฌกูฏ) เดินชมวิวธรรมชาติ (กรุณาตรวจสอบช่วงเปิดให้เข้าชม)</li>
+                  <li style="text-indent: 30px;">• 12:00 น. รับประทานอาหารกลางวัน อาหารพื้นเมืองในจันทบุรี</li>
+                  <li style="text-indent: 30px;">• 14:00 น. เยี่ยมชม วัดไผ่ล้อม ทำบุญไหว้พระ</li>
+                  <li style="text-indent: 30px;">• 16:00 น. เช็คอินที่พักในจันทบุรี</li>
+                  <li style="text-indent: 30px;">• 18:00 น. รับประทานอาหารเย็น </li>
+                </li>
+
+              </ul>
+          </div>
+
+           <div class="day-content k2d-regular" id="day4">
+                <h3>วันที่ 4 : เดินทางกลับ</h3>
+                <ul>
+                    <li style="text-indent: 30px;">• 08:00 น. รับประทานอาหารเช้า</li>
+                    <li style="text-indent: 30px;">• 09:00 น.: เดินทางกลับ</li>
+                    
+
+                </ul>
+            </div>
+
+
+           
+            <div class="navigation-arrows">
+                <button class="arrow-button" id="prev-day">❮</button>
+                <span class="current-day" id="current-day-label">วันที่ 1</span>
+                <button class="arrow-button" id="next-day">❯</button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </main>
 
   <script>
-    const currentPage = window.location.pathname;
-    const navLinks = document.querySelectorAll('.navbar a');
+    const days = ["day1", "day2","day3","day4"];
+    let currentIndex = 0;
 
-    navLinks.forEach(link => {
-        if (link.href.includes(currentPage)) {
-            link.classList.add('active');
+    function updateDay() {
+        // ซ่อนทุกวัน
+        days.forEach(day => {
+            document.getElementById(day).style.display = "none";
+        });
+
+        // แสดงเฉพาะวันที่เลือก
+        document.getElementById(days[currentIndex]).style.display = "block";
+
+        // อัปเดตตัวหนังสือ
+        document.getElementById("current-day-label").innerText = "วันที่ " + (currentIndex + 1);
+    }
+
+    document.getElementById("next-day").addEventListener("click", function () {
+        if (currentIndex < days.length - 1) {
+            currentIndex++;
+            updateDay();
         }
     });
+
+    document.getElementById("prev-day").addEventListener("click", function () {
+        if (currentIndex > 0) {
+            currentIndex--;
+            updateDay();
+        }
+    });
+
+    // โหลดครั้งแรกให้แสดงวันแรกก่อน
+    updateDay();
   </script>
+  
 </body>
 </html>
